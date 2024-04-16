@@ -1,2 +1,2 @@
-message = "This is homework 1"
+message = "This is my homework 1"
 print(message)
