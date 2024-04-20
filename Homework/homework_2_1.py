@@ -8,3 +8,5 @@ print(a)
 print(b)
 print(c)
 print(d)
+
+# divmod see in another file

@@ -9,3 +9,5 @@ d = str(num // 1000 % 10)
 e = str(num // 10000)
 reversed_num = a + b + c + d + e
 print(reversed_num)
+
+# solves the 0 problem
