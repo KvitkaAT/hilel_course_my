@@ -1,7 +1,7 @@
 import string
 import keyword
 variable_name = input("Please enter a variable name:")
-if variable_name == "_":
+if variable_name == "_":  # checks if variable name is '_'
     print("True")
 elif variable_name[0].isdigit():  # checks if the first character is digit
     print("False")
@@ -10,7 +10,7 @@ elif any(character.isupper() for character in variable_name):  # checks if any c
 elif any(character in string.punctuation and character != "_" or character == " " for character in variable_name):
     # character in punctuation/space excluding "_"
     print("False")
-elif all(character == "_" for character in variable_name):
+elif all(character == "_" for character in variable_name):  # checks if all characters are _
     print("False")
 elif variable_name in keyword.kwlist:  # checks if the variable is a keyword
     print("False")
