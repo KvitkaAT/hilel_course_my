@@ -1,6 +1,5 @@
 def say_hi(name: str, age: int) -> str:
-    message = f"Hi. My name is {name} and I'm {age} years old"
-    return message
+    return f"Hi. My name is {name} and I'm {age} years old"
 
 
 if __name__ == "__main__":
