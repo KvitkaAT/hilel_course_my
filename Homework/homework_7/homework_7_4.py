@@ -9,4 +9,5 @@ def common_elements() -> set:
     return set(random_divisible_3).intersection(random_divisible_5)  # set of intersection numbers from both lists
 
 
-print(common_elements())
+if __name__ == "__main__":
+    print(common_elements())

@@ -6,10 +6,11 @@ def correct_sentence(text: str) -> str:
     return text
 
 
-assert correct_sentence("greetings, friends") == "Greetings, friends."
-assert correct_sentence("hello") == "Hello."
-assert correct_sentence("Greetings. Friends") == "Greetings. Friends."
-assert correct_sentence("Greetings, friends.") == "Greetings, friends."
-assert correct_sentence("greetings, friends.") == "Greetings, friends."
-assert correct_sentence("SEE YOU LATER, ALLigator") == "SEE YOU LATER, ALLigator."
-print('ОК')
+if __name__ == "__main__":
+    assert correct_sentence("greetings, friends") == "Greetings, friends."
+    assert correct_sentence("hello") == "Hello."
+    assert correct_sentence("Greetings. Friends") == "Greetings. Friends."
+    assert correct_sentence("Greetings, friends.") == "Greetings, friends."
+    assert correct_sentence("greetings, friends.") == "Greetings, friends."
+    assert correct_sentence("SEE YOU LATER, ALLigator") == "SEE YOU LATER, ALLigator."
+    print('ОК')
