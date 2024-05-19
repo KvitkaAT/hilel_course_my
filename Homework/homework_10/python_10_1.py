@@ -1,3 +1,4 @@
+from inspect import isgenerator
 def pow(x: int) -> int:
     return x ** 2
 
@@ -13,8 +14,6 @@ def some_gen(begin: int, end: int, func):
         yield number
         number = func(number)
 
-
-from inspect import isgenerator
 
 gen = some_gen(2, 4, pow)
 
