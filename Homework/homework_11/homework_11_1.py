@@ -1,7 +1,7 @@
 from inspect import isgenerator
 
 
-def prime_number(n):
+def prime_number(n: int) -> bool:
     if n <= 1:  # if a number is <= 1, it is not prime
         return False
     for divisor in range(2, int(n ** 0.5) + 1):  # loops within the range of 2 and square roots of the number
