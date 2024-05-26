@@ -3,7 +3,7 @@ import re
 
 
 def delete_html_tags(html_file="draft.html", result_file="cleaned.txt"):
-    with codecs.open(html_file, "r", 'utf-8') as file:  # opens the file for reading
+    with codecs.open(html_file, "r", "utf-8") as file:  # opens the file for reading
         html = file.read()
 
     cleaned_text = delete_html_tags_from_text(html)
