@@ -4,7 +4,7 @@ class Human:
         self.gender = gender
         self.age = age
         self.first_name = first_name
-        self. last_name = last_name
+        self.last_name = last_name
 
     def __str__(self) -> str:
         return f"{self.first_name} {self.last_name}, {self.gender}, {self.age} years old"
@@ -36,10 +36,8 @@ class Group:
                 break  # if student was found, breaks the loop
 
     def find_student(self, last_name: str) -> Student | None:
-        for student in self.group:  # iterates through all students in a group
-            if student.last_name == last_name:  # finds a student by the last name
-                return student  # returns the student instance
-        return None  # if a student was not found, return None
+        return next((student for student in self.group if student.last_name == last_name), None)
+        # iterates through all students in a group
 
     def __str__(self) -> str:
         all_students = "\n".join(str(student) for student in self.group)  # adds a student instance to a string
