@@ -1,6 +1,6 @@
-from module_exception import LimitReachedError
+from exception import LimitReachedError
 
-from module_student import Student
+from student import Student
 
 
 class Group:
