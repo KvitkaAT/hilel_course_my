@@ -23,14 +23,13 @@ if __name__ == '__main__':
         gr.add_student(student)
     print(gr)
 
-try:
-    gr.add_student(st11)
-except LimitReachedError as e:
-    print(e)
+    try:
+        gr.add_student(st11)
+    except LimitReachedError as e:
+        print(e)
 
+    assert gr.find_student('Jobs') == st1  # 'Steve Jobs'
+    assert gr.find_student('Jobs2') is None
 
-assert gr.find_student('Jobs') == st1  # 'Steve Jobs'
-assert gr.find_student('Jobs2') is None
-
-gr.delete_student('Taylor')
-print(gr)  # Only one student
+    gr.delete_student('Taylor')
+    print(gr)  # Only one student
