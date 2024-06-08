@@ -16,7 +16,7 @@ class Rectangle:
         height_add = result_add // width_add
         return Rectangle(width_add, height_add)
 
-    def __mul__(self, n):
+    def __mul__(self, n: int) -> int:
         result_mul = self.get_square() * n
         height_mul = self.height
         width_mul = result_mul // height_mul
